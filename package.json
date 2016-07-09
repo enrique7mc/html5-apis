@@ -1,0 +1,22 @@
+{
+  "name": "html5-apis",
+  "version": "1.0.0",
+  "description": "Demostraciones de las siguientes APIs de HTML5",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enrique7mc/html5-apis.git"
+  },
+  "author": "Enrique M",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enrique7mc/html5-apis/issues"
+  },
+  "homepage": "https://github.com/enrique7mc/html5-apis#readme",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
+}
