@@ -4,8 +4,9 @@
         <title>Ejemplo Web Storage</title>
         <script src="index.js"></script>
         <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     </head>
-    <body onload="doShowAll()">
+    <body onload="cargarItems()">
     <ul class="topnav">
         <li><a href="../media/index.html">Media</a></li>
         <li><a href="../geolocation/index.html">Geolocation</a></li>
@@ -13,28 +14,21 @@
         <li><a href="../canvas/index.html">Canvas</a></li>
     </ul>
     <main>
-        <form name=ShoppingList style="width: 600px">
-            <div id="PlayArea">
-                <h1>Ingresa Producto y Cantidad</h1>
-                <table>
-                    <tr>
-                        <td><b>Producto:</b><input type=text id='producto' name=name></td>
-                        <td><b>Cantidad:</b><input type=text id='cantidad' name=data></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type=button value="Guardar"   onclick="SaveItem()">
-                            <input type=button value="Modificar" onclick="ModifyItem()">
-                            <input type=button value="Remover" onclick="RemoveItem()">
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div id="items_table">
-                <h2>Carrito</h2>
-                <table id=list></table>
+        <form class="pure-form">
+            <fieldset>
+                <legend>Ingresa Producto y Cantidad</legend>
+                <input type="text" id="producto" placeholder="Producto">
+                <input type="number" id="cantidad" placeholder="Cantidad">
                 <p>
-                    <label><input type=button value="Limpiar" onclick="ClearAll()">
+                    <input type="button" class="pure-button pure-button-primary" onclick="guardarItem()" value="Guardar"/>
+                    <input type="button" class="pure-button pure-button-primary" onclick="removerItem()" value="Remover"/>
+                </p>
+            </fieldset>
+            <div>
+                <h2>Carrito</h2>
+                <table id=list class="pure-table"></table>
+                <p>
+                    <label><button class="pure-button" onclick="limpiar()">Limpiar</button>
                         <i>* Remover todos los productos</i></label>
                 </p>
             </div>
