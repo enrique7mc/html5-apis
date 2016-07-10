@@ -44,3 +44,6 @@ crashlytics-build.properties
 fabric.properties
 
 node_modules
+*.mp4
+*.ogv
+*.webm
