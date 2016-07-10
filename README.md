@@ -17,6 +17,6 @@ Demostraciones de las siguientes APIs de HTML5
 Este repositorio usa `npm` y el paquete `http-server` para que los ejercicios se ejecuten en un servidor local (requerimiento para `Geolocation`) por lo que es necesario tener instalado Node JS
 
 ### Nota 2
-Para mantener reducido el tamaño de la descarga el repositorio no incluye los videos para la sección de `Media`, puedes descargarlos en este link[https://www.dropbox.com/sh/dp1cgdlrg7ku6m0/AACj7ApeWJpCaPjKASDTI1H5a?dl=0] y agregarlos a la carpeta `media/videos` para visualizarlos en el ejemplo.
+Para mantener reducido el tamaño de la descarga el repositorio no incluye los videos para la sección de `Media`, puedes descargarlos en este [link](https://www.dropbox.com/sh/dp1cgdlrg7ku6m0/AACj7ApeWJpCaPjKASDTI1H5a?dl=0) y agregarlos a la carpeta `media/videos` para visualizarlos en el ejemplo.
 
 
