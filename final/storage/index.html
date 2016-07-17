@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejemplo Web Storage</title>
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    </head>
+    <body onload="cargarItems()">
+    <ul class="topnav">
+        <li><a href="../media/index.html">Media</a></li>
+        <li><a href="../geolocation/index.html">Geolocation</a></li>
+        <li><a href="../storage/index.html">Storage</a></li>
+        <li><a href="../canvas/paint">Canvas</a></li>
+    </ul>
+    <main>
+        <form class="pure-form">
+            <fieldset>
+                <legend>Ingresa Producto y Cantidad</legend>
+                <input type="text" id="producto" placeholder="Producto">
+                <input type="number" id="cantidad" placeholder="Cantidad">
+                <p>
+                    <input type="button" class="pure-button pure-button-primary" onclick="guardarItem()" value="Guardar"/>
+                    <input type="button" class="pure-button pure-button-primary" onclick="removerItem()" value="Remover"/>
+                </p>
+            </fieldset>
+            <div>
+                <h2>Carrito</h2>
+                <table id=list class="pure-table"></table>
+                <p>
+                    <label><button class="pure-button" onclick="limpiar()">Limpiar</button>
+                        <i>* Remover todos los productos</i></label>
+                </p>
+            </div>
+        </form>
+    </main>
+    </body>
+</html>
